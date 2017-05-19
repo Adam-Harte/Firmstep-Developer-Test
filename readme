@@ -1,0 +1,12 @@
+This test has been completed using HTMl, Bootsrap, Javascript and Jquery.
+The layput was created using the Bootstrap framework as this is a quick way to get a demo up and running with responisve design.
+HTML 5 input tags were used to gather the text and options inputs for the data.
+Data for the type was done by taking the active bootstrap tab at the time that the submit button is clicked.
+The input options vary depending on what tab is currently active.
+If an input on the currently selected tab is not filled or has incorrect requirements upon the submit button being clicked then an alert message
+is shown to the user and the data is not appended to the list.
+Data is persisted using localstorage to keep an array of previosuly accepted inputs to hold onto and append back on ot the 
+queue when the page is refreshed.
+I am aware that data would normally be persisted on a database with get ot set ajax requests made to the backend to retrieve or add data.
+However my professoinal knowledge and experience is on the front end in HTML, CSS and Javascript so local storage was
+used as an example to show data being persisted and used upon page reloads.
