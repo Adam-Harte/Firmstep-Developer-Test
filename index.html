@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <title>Firmstep Developer Test</title>
+</head>
+<body>
+<div class="container">
+ <div class="row">
+  <div class="col-xs-12 col-md-7">
+   <div class="panel panel-default">
+    <div class="panel-heading">New Customer</div>
+    <div class="panel-body">
+     <div class="radio">
+      <label><input type="radio" id="Housing" value="Housing" name="options" checked />Housing</label>
+     </div>
+     <div class="radio">
+      <label><input type="radio" id="Benefits" value="Benefits" name="options" />Benefits</label>
+     </div>
+     <div class="radio">
+      <label><input type="radio" id="Council Tax" value="Council Tax" name="options" />Council Tax</label>
+     </div>
+     <div class="radio">
+      <label><input type="radio" id="Fly-tipping" value="Fly-tipping" name="options" />Fly-tippig</label>
+     </div>
+     <div class="radio">
+      <label><input type="radio" id="Missed Bin" value="Missed Bin" name="options" />Missed Bin</label>
+     </div>
+     <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="nav-item active"><a class="nav-link" href="#citizen" aria-controls="Citizen" role="tab" data-toggle="tab">Citizen</a></li>
+      <li role="presentation" class="nav-item"><a class="nav-link" href="#organisation" aria-controls="Organisation" role="tab" data-toggle="tab">Organisation</a></li>
+      <li role="presentation" class="nav-item"><a class="nav-link" href="#anonymous" aria-controls="Anonymous" role="tab" data-toggle="tab">Anonymous</a></li>
+     </ul>
+     <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="citizen">
+       <div class="form-group">
+        <label for="title">Title:</label>
+        <select id="title" class="form-control">
+	<option value="Mr">Mr</option>
+	<option value="Mrs">Mrs</option>
+	<option value="Miss">Miss</option>
+	<option value="Dr">Dr</option>
+</select>
+        <label for="firstname">First Name:</label>
+        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" />
+        <label for="lastname">Last Name:</label>
+        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" />
+       </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="organisation">
+       <div class="form-group">
+        <label for="organisation">Organisation:</label>
+        <input type="text" id="organisationname" class="form-control" name="organisation" placeholder="Organisation Name" />
+       </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="anonymous">
+      </div>
+     </div>
+     <button type="submit" class="btn-primary">Submit</button>
+    </div>
+   </div>
+  </div>
+  <div class="col-xs-12 col-md-5">
+   <div class="panel panel-default">
+    <div class="panel-heading">Queue</div>
+    <div class="panel-body data">
+     <div class="row">
+      <div class="col-xs-1">
+       <p>#</p>
+      </div>
+      <div class="col-xs-3">
+       <p>Type</p>
+      </div>
+      <div class="col-xs-3">
+       <p>Name</p>
+      </div>
+      <div class="col-xs-3">
+       <p>Service</p>
+      </div>
+      <div class="col-xs-2">
+       <p>Time</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</body>
+</html>
